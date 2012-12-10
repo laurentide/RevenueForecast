@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <State>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SourceControl xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;Enabled&gt;true&lt;/Enabled&gt;
+  &lt;ProjectName&gt;"$/Financial_Reports.root/Financial_Reports", ZOAAAAAA&lt;/ProjectName&gt;
+  &lt;AuxPath /&gt;
+  &lt;LocalPath&gt;.&lt;/LocalPath&gt;
+  &lt;Provider&gt;MSSCCI:Microsoft Visual SourceSafe&lt;/Provider&gt;
+&lt;/SourceControl&gt;</State>
+  <DataSources>
+    <ProjectItem>
+      <Name>LCLAdmin.rds</Name>
+      <FullPath>LCLAdmin.rds</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>LCLAdmin_2008.rds</Name>
+      <FullPath>LCLAdmin_2008.rds</FullPath>
+    </ProjectItem>
+  </DataSources>
+  <Reports>
+    <ProjectItem>
+      <Name>Budget_By_Department_DDN.rdl</Name>
+      <FullPath>Budget_By_Department_DDN.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Department.rdl</Name>
+      <FullPath>Department.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Department_DDN.rdl</Name>
+      <FullPath>Department_DDN.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Details.rdl</Name>
+      <FullPath>Details.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Details-DDN.rdl</Name>
+      <FullPath>Details-DDN.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Global_DDN.rdl</Name>
+      <FullPath>Global_DDN.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>MTG2.rdl</Name>
+      <FullPath>MTG2.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>PastYear.rdl</Name>
+      <FullPath>PastYear.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>PastYear_DDN.rdl</Name>
+      <FullPath>PastYear_DDN.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>QTD.rdl</Name>
+      <FullPath>QTD.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>QTD_DDN.rdl</Name>
+      <FullPath>QTD_DDN.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Team_Synopsis_DDN.rdl</Name>
+      <FullPath>Team_Synopsis_DDN.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Budget_By_Department_2008.rdl</Name>
+      <FullPath>Budget_By_Department_2008.rdl</FullPath>
+    </ProjectItem>
+  </Reports>
+  <Configurations>
+    <Configuration>
+      <Name>Debug</Name>
+      <Platform>Win32</Platform>
+      <Options>
+        <TargetServerURL>http://localhost/ReportServer1</TargetServerURL>
+        <TargetFolder>/Finance/Test</TargetFolder>
+        <OverwriteDataSources>true</OverwriteDataSources>
+        <StartItem>Department.rdl</StartItem>
+      </Options>
+    </Configuration>
+    <Configuration>
+      <Name>DebugLocal</Name>
+      <Platform>Win32</Platform>
+      <Options>
+        <TargetFolder>Financial_Reports</TargetFolder>
+      </Options>
+    </Configuration>
+    <Configuration>
+      <Name>Production</Name>
+      <Platform>Win32</Platform>
+      <Options>
+        <TargetFolder>Financial_Reports</TargetFolder>
+      </Options>
+    </Configuration>
+  </Configurations>
+</Project>

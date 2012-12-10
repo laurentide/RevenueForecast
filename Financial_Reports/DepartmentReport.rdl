@@ -1,0 +1,1191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2003/10/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <PageHeader>
+    <ReportItems>
+      <Textbox Name="textbox14">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <FontSize>8pt</FontSize>
+          <TextAlign>Right</TextAlign>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <ZIndex>3</ZIndex>
+        <rd:DefaultName>textbox14</rd:DefaultName>
+        <Height>0.25in</Height>
+        <CanGrow>true</CanGrow>
+        <Value>= "Year:" &amp; Parameters!Year.Value &amp; " Month: " &amp; Parameters!Month.Label</Value>
+        <Left>6.25in</Left>
+      </Textbox>
+      <Textbox Name="textbox1">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <FontFamily>Courier New</FontFamily>
+          <FontSize>14pt</FontSize>
+          <TextAlign>Center</TextAlign>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+          <FontWeight>700</FontWeight>
+        </Style>
+        <ZIndex>2</ZIndex>
+        <Top>0.375in</Top>
+        <rd:DefaultName>textbox1</rd:DefaultName>
+        <Width>2.5in</Width>
+        <CanGrow>true</CanGrow>
+        <Value>= Parameters!Department.Value</Value>
+        <Left>3.125in</Left>
+      </Textbox>
+      <Textbox Name="textbox12">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <TextDecoration>Underline</TextDecoration>
+          <FontSize>12pt</FontSize>
+          <TextAlign>Center</TextAlign>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+          <FontWeight>700</FontWeight>
+        </Style>
+        <ZIndex>1</ZIndex>
+        <rd:DefaultName>textbox12</rd:DefaultName>
+        <Height>0.25in</Height>
+        <Width>3.5in</Width>
+        <CanGrow>true</CanGrow>
+        <Value>Financial Report by department</Value>
+        <Left>2.5in</Left>
+      </Textbox>
+      <Image Name="image1">
+        <MIMEType>image/gif</MIMEType>
+        <Height>0.5in</Height>
+        <Width>1.75in</Width>
+        <Source>Embedded</Source>
+        <Style />
+        <Value>laurentide_logo</Value>
+        <Sizing>FitProportional</Sizing>
+      </Image>
+    </ReportItems>
+    <PrintOnLastPage>true</PrintOnLastPage>
+    <PrintOnFirstPage>true</PrintOnFirstPage>
+    <Style />
+    <Height>0.875in</Height>
+  </PageHeader>
+  <Author>Duc Duy Nguyen</Author>
+  <Body>
+    <ReportItems>
+      <Table Name="table1">
+        <Height>1.25in</Height>
+        <Style>
+          <FontFamily>Courier New</FontFamily>
+          <FontSize>8pt</FontSize>
+        </Style>
+        <Header>
+          <TableRows>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox36">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <FontFamily>Courier New</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <LineHeight>8pt</LineHeight>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>34</ZIndex>
+                      <rd:DefaultName>textbox36</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox37">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <FontFamily>Courier New</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <LineHeight>8pt</LineHeight>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>33</ZIndex>
+                      <rd:DefaultName>textbox37</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox3">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <FontFamily>Courier New</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <LineHeight>8pt</LineHeight>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>32</ZIndex>
+                      <rd:DefaultName>textbox3</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox39">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <FontFamily>Courier New</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <LineHeight>8pt</LineHeight>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>31</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>Budget: Year</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox43">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <FontFamily>Courier New</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <LineHeight>8pt</LineHeight>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>30</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>Actual: YTD</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox21">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <FontFamily>Courier New</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>29</ZIndex>
+                      <rd:DefaultName>textbox21</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Monthly Budget</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox42">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <FontFamily>Courier New</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <LineHeight>8pt</LineHeight>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>28</ZIndex>
+                      <rd:DefaultName>textbox42</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>= "Actual: " &amp; Parameters!Month.Label</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+          </TableRows>
+          <RepeatOnNewPage>true</RepeatOnNewPage>
+        </Header>
+        <Details>
+          <TableRows>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox34">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <FontFamily>Courier New</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <LineHeight>8pt</LineHeight>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>6</ZIndex>
+                      <rd:DefaultName>textbox34</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox7">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <FontFamily>Courier New</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <LineHeight>8pt</LineHeight>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>5</ZIndex>
+                      <rd:DefaultName>textbox7</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>= Fields!RPTDESC.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox6">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <Format>C</Format>
+                        <FontFamily>Courier New</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <LineHeight>8pt</LineHeight>
+                        <TextAlign>Right</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>4</ZIndex>
+                      <rd:DefaultName>textbox6</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox15">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <Format>C</Format>
+                        <FontFamily>Courier New</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <LineHeight>8pt</LineHeight>
+                        <TextAlign>Right</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>3</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!TOTALPLANANNEE.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox45">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <Format>C</Format>
+                        <TextDecoration>Underline</TextDecoration>
+                        <FontFamily>Courier New</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <LineHeight>8pt</LineHeight>
+                        <TextAlign>Right</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>2</ZIndex>
+                      <Action>
+                        <Drillthrough>
+                          <Parameters>
+                            <Parameter Name="rptdesc">
+                              <Value>=Fields!RPTDESC.Value</Value>
+                            </Parameter>
+                            <Parameter Name="type">
+                              <Value>YTD</Value>
+                            </Parameter>
+                            <Parameter Name="department">
+                              <Value>=Parameters!Department.Value</Value>
+                            </Parameter>
+                            <Parameter Name="Month">
+                              <Value>=Parameters!Month.Value</Value>
+                            </Parameter>
+                            <Parameter Name="Year">
+                              <Value>=Parameters!Year.Value</Value>
+                            </Parameter>
+                          </Parameters>
+                          <ReportName>Details-DDN</ReportName>
+                        </Drillthrough>
+                      </Action>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!AnneeFY.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox46">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <Format>C</Format>
+                        <FontFamily>Courier New</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <LineHeight>8pt</LineHeight>
+                        <TextAlign>Right</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>1</ZIndex>
+                      <Action>
+                        <Drillthrough>
+                          <ReportName>Details</ReportName>
+                        </Drillthrough>
+                      </Action>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!TOTALPLANAMOIS.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox47">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <Format>C</Format>
+                        <TextDecoration>Underline</TextDecoration>
+                        <FontFamily>Courier New</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <LineHeight>8pt</LineHeight>
+                        <TextAlign>Right</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <Action>
+                        <Drillthrough>
+                          <Parameters>
+                            <Parameter Name="rptdesc">
+                              <Value>=Fields!RPTDESC.Value</Value>
+                            </Parameter>
+                            <Parameter Name="type">
+                              <Value>MTD</Value>
+                            </Parameter>
+                            <Parameter Name="department">
+                              <Value>=Parameters!Department.Value</Value>
+                            </Parameter>
+                            <Parameter Name="Month">
+                              <Value>=Parameters!Month.Value</Value>
+                            </Parameter>
+                            <Parameter Name="Year">
+                              <Value>=Parameters!Year.Value</Value>
+                            </Parameter>
+                          </Parameters>
+                          <ReportName>Details-DDN</ReportName>
+                        </Drillthrough>
+                      </Action>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!MoisFY.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+          </TableRows>
+        </Details>
+        <DataSetName>LCLAdmin</DataSetName>
+        <Width>7.5in</Width>
+        <TableGroups>
+          <TableGroup>
+            <Grouping Name="table1_RPTCAT">
+              <GroupExpressions>
+                <GroupExpression>=Fields!RPTCAT.Value</GroupExpression>
+              </GroupExpressions>
+            </Grouping>
+            <Footer>
+              <TableRows>
+                <TableRow>
+                  <Height>0.25in</Height>
+                  <TableCells>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox2">
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <FontFamily>Courier New</FontFamily>
+                            <FontSize>8pt</FontSize>
+                            <LineHeight>8pt</LineHeight>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingRight>2pt</PaddingRight>
+                          </Style>
+                          <ZIndex>13</ZIndex>
+                          <rd:DefaultName>textbox2</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <Value />
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox9">
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <FontFamily>Courier New</FontFamily>
+                            <FontSize>8pt</FontSize>
+                            <LineHeight>8pt</LineHeight>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingRight>2pt</PaddingRight>
+                          </Style>
+                          <ZIndex>12</ZIndex>
+                          <rd:DefaultName>textbox9</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <Value />
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox8">
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <FontFamily>Courier New</FontFamily>
+                            <FontSize>8pt</FontSize>
+                            <LineHeight>8pt</LineHeight>
+                            <TextAlign>Left</TextAlign>
+                            <Color>DeepSkyBlue</Color>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingRight>2pt</PaddingRight>
+                          </Style>
+                          <ZIndex>11</ZIndex>
+                          <rd:DefaultName>textbox8</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <Value>Total</Value>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox13">
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <Format>C</Format>
+                            <FontFamily>Courier New</FontFamily>
+                            <FontSize>8pt</FontSize>
+                            <LineHeight>8pt</LineHeight>
+                            <TextAlign>Right</TextAlign>
+                            <Color>DeepSkyBlue</Color>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingRight>2pt</PaddingRight>
+                          </Style>
+                          <ZIndex>10</ZIndex>
+                          <CanGrow>true</CanGrow>
+                          <Value>=Sum(Fields!TOTALPLANANNEE.Value)</Value>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox27">
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <Format>C</Format>
+                            <FontFamily>Courier New</FontFamily>
+                            <FontSize>8pt</FontSize>
+                            <LineHeight>8pt</LineHeight>
+                            <TextAlign>Right</TextAlign>
+                            <Color>DeepSkyBlue</Color>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingRight>2pt</PaddingRight>
+                          </Style>
+                          <ZIndex>9</ZIndex>
+                          <CanGrow>true</CanGrow>
+                          <Value>=Sum(Fields!AnneeFY.Value)</Value>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox29">
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <Format>C</Format>
+                            <FontFamily>Courier New</FontFamily>
+                            <FontSize>8pt</FontSize>
+                            <LineHeight>8pt</LineHeight>
+                            <TextAlign>Right</TextAlign>
+                            <Color>DeepSkyBlue</Color>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingRight>2pt</PaddingRight>
+                          </Style>
+                          <ZIndex>8</ZIndex>
+                          <CanGrow>true</CanGrow>
+                          <Value>=Sum(Fields!TOTALPLANAMOIS.Value)</Value>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox30">
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <Format>C</Format>
+                            <FontFamily>Courier New</FontFamily>
+                            <FontSize>8pt</FontSize>
+                            <LineHeight>8pt</LineHeight>
+                            <TextAlign>Right</TextAlign>
+                            <Color>DeepSkyBlue</Color>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingRight>2pt</PaddingRight>
+                          </Style>
+                          <ZIndex>7</ZIndex>
+                          <CanGrow>true</CanGrow>
+                          <Value>=Sum(Fields!MoisFY.Value)</Value>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                  </TableCells>
+                </TableRow>
+              </TableRows>
+            </Footer>
+            <Sorting>
+              <SortBy>
+                <SortExpression>=Fields!RPTCAT.Value</SortExpression>
+                <Direction>Ascending</Direction>
+              </SortBy>
+            </Sorting>
+          </TableGroup>
+          <TableGroup>
+            <Grouping Name="table1_RPTDESC">
+              <GroupExpressions>
+                <GroupExpression>=Fields!RPTDESC.Value</GroupExpression>
+              </GroupExpressions>
+            </Grouping>
+            <Sorting>
+              <SortBy>
+                <SortExpression>=Fields!RPTDESC.Value</SortExpression>
+                <Direction>Ascending</Direction>
+              </SortBy>
+            </Sorting>
+          </TableGroup>
+          <TableGroup>
+            <Header>
+              <TableRows>
+                <TableRow>
+                  <Height>0.25in</Height>
+                  <TableCells>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="RPTCAT">
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <FontFamily>Courier New</FontFamily>
+                            <FontSize>8pt</FontSize>
+                            <LineHeight>8pt</LineHeight>
+                            <TextAlign>Left</TextAlign>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingRight>2pt</PaddingRight>
+                          </Style>
+                          <ZIndex>27</ZIndex>
+                          <rd:DefaultName>RPTCAT</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <Value>=Fields!RPTCAT.Value</Value>
+                          <HideDuplicates>LCLAdmin</HideDuplicates>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox16">
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <FontFamily>Courier New</FontFamily>
+                            <FontSize>8pt</FontSize>
+                            <LineHeight>8pt</LineHeight>
+                            <TextAlign>Center</TextAlign>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingRight>2pt</PaddingRight>
+                          </Style>
+                          <ZIndex>26</ZIndex>
+                          <rd:DefaultName>textbox16</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <Value />
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox5">
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <FontFamily>Courier New</FontFamily>
+                            <FontSize>8pt</FontSize>
+                            <LineHeight>8pt</LineHeight>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingRight>2pt</PaddingRight>
+                          </Style>
+                          <ZIndex>25</ZIndex>
+                          <rd:DefaultName>textbox5</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <Value />
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox17">
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <FontFamily>Courier New</FontFamily>
+                            <FontSize>8pt</FontSize>
+                            <LineHeight>8pt</LineHeight>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingRight>2pt</PaddingRight>
+                          </Style>
+                          <ZIndex>24</ZIndex>
+                          <rd:DefaultName>textbox17</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <Value />
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox18">
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <FontFamily>Courier New</FontFamily>
+                            <FontSize>8pt</FontSize>
+                            <LineHeight>8pt</LineHeight>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingRight>2pt</PaddingRight>
+                          </Style>
+                          <ZIndex>23</ZIndex>
+                          <rd:DefaultName>textbox18</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <Value />
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox19">
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <FontFamily>Courier New</FontFamily>
+                            <FontSize>8pt</FontSize>
+                            <LineHeight>8pt</LineHeight>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingRight>2pt</PaddingRight>
+                          </Style>
+                          <ZIndex>22</ZIndex>
+                          <rd:DefaultName>textbox19</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <Value />
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox20">
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <FontFamily>Courier New</FontFamily>
+                            <FontSize>8pt</FontSize>
+                            <LineHeight>8pt</LineHeight>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingRight>2pt</PaddingRight>
+                          </Style>
+                          <ZIndex>21</ZIndex>
+                          <rd:DefaultName>textbox20</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <Value />
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                  </TableCells>
+                </TableRow>
+              </TableRows>
+            </Header>
+            <Grouping Name="table1_Group3">
+              <GroupExpressions>
+                <GroupExpression>=Fields!RPTDESC.Value</GroupExpression>
+              </GroupExpressions>
+            </Grouping>
+          </TableGroup>
+        </TableGroups>
+        <Footer>
+          <TableRows>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox23">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <FontFamily>Courier New</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>20</ZIndex>
+                      <rd:DefaultName>textbox23</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox24">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <FontFamily>Courier New</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>19</ZIndex>
+                      <rd:DefaultName>textbox24</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox48">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <FontFamily>Courier New</FontFamily>
+                        <BorderWidth>
+                          <Top>1pt</Top>
+                        </BorderWidth>
+                        <BorderColor>
+                          <Top>Black</Top>
+                        </BorderColor>
+                        <BorderStyle>
+                          <Top>Solid</Top>
+                        </BorderStyle>
+                        <FontSize>8pt</FontSize>
+                        <LineHeight>8pt</LineHeight>
+                        <TextAlign>Left</TextAlign>
+                        <Color>Blue</Color>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>18</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>Total</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox54">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <Format>C</Format>
+                        <FontFamily>Courier New</FontFamily>
+                        <BorderWidth>
+                          <Top>1pt</Top>
+                        </BorderWidth>
+                        <BorderColor>
+                          <Top>Black</Top>
+                        </BorderColor>
+                        <BorderStyle>
+                          <Top>Solid</Top>
+                        </BorderStyle>
+                        <FontSize>8pt</FontSize>
+                        <LineHeight>8pt</LineHeight>
+                        <TextAlign>Right</TextAlign>
+                        <Color>Blue</Color>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>17</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Sum(Fields!TOTALPLANANNEE.Value)</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox55">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <Format>C</Format>
+                        <FontFamily>Courier New</FontFamily>
+                        <BorderWidth>
+                          <Top>1pt</Top>
+                        </BorderWidth>
+                        <BorderColor>
+                          <Top>Black</Top>
+                        </BorderColor>
+                        <BorderStyle>
+                          <Top>Solid</Top>
+                        </BorderStyle>
+                        <FontSize>8pt</FontSize>
+                        <LineHeight>8pt</LineHeight>
+                        <TextAlign>Right</TextAlign>
+                        <Color>Blue</Color>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>16</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Sum(Fields!AnneeFY.Value)</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox56">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <Format>C</Format>
+                        <FontFamily>Courier New</FontFamily>
+                        <BorderWidth>
+                          <Top>1pt</Top>
+                        </BorderWidth>
+                        <BorderColor>
+                          <Top>Black</Top>
+                        </BorderColor>
+                        <BorderStyle>
+                          <Top>Solid</Top>
+                        </BorderStyle>
+                        <FontSize>8pt</FontSize>
+                        <LineHeight>8pt</LineHeight>
+                        <TextAlign>Right</TextAlign>
+                        <Color>Blue</Color>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>15</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Sum(Fields!TOTALPLANAMOIS.Value)</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox57">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <Format>C</Format>
+                        <FontFamily>Courier New</FontFamily>
+                        <BorderWidth>
+                          <Top>1pt</Top>
+                        </BorderWidth>
+                        <BorderColor>
+                          <Top>Black</Top>
+                        </BorderColor>
+                        <BorderStyle>
+                          <Top>Solid</Top>
+                        </BorderStyle>
+                        <FontSize>8pt</FontSize>
+                        <LineHeight>8pt</LineHeight>
+                        <TextAlign>Right</TextAlign>
+                        <Color>Blue</Color>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>14</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Sum(Fields!MoisFY.Value)</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+          </TableRows>
+        </Footer>
+        <Left>0.625in</Left>
+        <TableColumns>
+          <TableColumn>
+            <Width>1.25in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>1.25in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>0.5in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>1.125in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>1.125in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>1.125in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>1.125in</Width>
+          </TableColumn>
+        </TableColumns>
+      </Table>
+    </ReportItems>
+    <Style />
+    <Height>1.375in</Height>
+  </Body>
+  <TopMargin>0.1in</TopMargin>
+  <DataSources>
+    <DataSource Name="LCLAdmin">
+      <rd:DataSourceID>87e45ab0-23f1-472e-921f-2eca354b4353</rd:DataSourceID>
+      <DataSourceReference>LCLAdmin</DataSourceReference>
+    </DataSource>
+  </DataSources>
+  <Width>8.5in</Width>
+  <DataSets>
+    <DataSet Name="LCLAdmin">
+      <Fields>
+        <Field Name="RPTCAT">
+          <DataField>rptcat</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RPTDESC">
+          <DataField>rptdesc</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TOTALPLANANNEE">
+          <DataField>TOTALPLANANNEE</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="TOTALPLANAMOIS">
+          <DataField>TOTALPLANAMOIS</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="AnneeFY">
+          <DataField>AnneeFY</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="MoisFY">
+          <DataField>MoisFY</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>LCLAdmin</DataSourceName>
+        <CommandText>SELECT     BUDG.DEPARTMENT_NAME, BUDG.CATID, BUDG.RPTCAT, BUDG.RPTID, BUDG.RPTDESC, SUM(BUDG.TOTALPLANANNEE) AS Expr1, 
+                      SUM(BUDG.TOTALPLANAMOIS) AS Expr2, SUM(CASE WHEN AMOUNT IS NULL THEN 0 ELSE AMOUNT END) AS NOMIS_AMOUNT
+FROM         (SELECT     YEAR, DEPT.DEPARTMENTID, DEPT.DESCRIPTION AS DEPARTMENT_NAME, CATID, RPTCAT, RPTDESC, RPTID, GL, A.DESCRIPTION, 
+                                              SUM(TOTALPLANANNEE) AS TOTALPLANANNEE, SUM(TOTALPLANAMOIS) AS TOTALPLANAMOIS
+                       FROM          (SELECT     GL.RPTDESC, GL.RPTID, CAT.CATID, RPTCAT, GL.GL, GL.DESCRIPTION, TRAV.DEPARTMENTID, TRAV.YEAR, 
+                                                                      CASE WHEN GL.DESCRIPTION = 'Training' THEN COSTOFCOURSE + ISNULL(MONTANT, 0) 
+                                                                      WHEN GL.DESCRIPTION = 'Car rental' THEN CARRENTAL + ISNULL(MONTANT, 0) 
+                                                                      WHEN GL.DESCRIPTION = 'Travel  fares' THEN FARES + ISNULL(MONTANT, 0) 
+                                                                      WHEN GL.DESCRIPTION = 'Travel  hotel' THEN HOTEL + ISNULL(MONTANT, 0) 
+                                                                      WHEN GL.DESCRIPTION = 'Meals &amp; entertainment' THEN MEALS_ENTERTAINMENT + ISNULL(MONTANT, 0) 
+                                                                      ELSE ISNULL(MONTANT, 0) END TOTALPLANANNEE, 
+                                                                      CASE WHEN GL.DESCRIPTION = 'Training' THEN COSTOFCOURSE + ISNULL(MONTANT, 0) 
+                                                                      / 12 WHEN GL.DESCRIPTION = 'Car rental' THEN CARRENTAL + ISNULL(MONTANT, 0) 
+                                                                      / 12 WHEN GL.DESCRIPTION = 'Travel  fares' THEN FARES + ISNULL(MONTANT, 0) 
+                                                                      / 12 WHEN GL.DESCRIPTION = 'Travel  hotel' THEN HOTEL + ISNULL(MONTANT, 0) 
+                                                                      / 12 WHEN GL.DESCRIPTION = 'Meals &amp; entertainment' THEN MEALS_ENTERTAINMENT + ISNULL(MONTANT, 0) 
+                                                                      / 12 ELSE ISNULL(MONTANT, 0) / 12 END TOTALPLANAMOIS
+                                               FROM          TBLGL GL, TBLMAINCAT CAT,
+                                                                          (SELECT     TB.BUDGETID, DEPT.DEPARTMENTID, YEAR, SUM(COSTOFCOURSE) AS COSTOFCOURSE, SUM(CARRENTAL) 
+                                                                                                   AS CARRENTAL, SUM(FARES) AS FARES, SUM(HOTEL) AS HOTEL, SUM(MEALS) + SUM(ENTERTAINMENT) 
+                                                                                                   AS MEALS_ENTERTAINMENT
+                                                                            FROM          TBLTRAVELBUDGET TB, TBLBUDGET BUDG, TBLDEPARTEMENT DEPT
+                                                                            WHERE      BUDG.BUDGETID = TB.BUDGETID AND BUDG.DEPARTMENTID = DEPT.DEPARTMENTID
+                                                                            GROUP BY TB.BUDGETID, DEPT.DEPARTMENTID, YEAR) TRAV,
+                                                                          (SELECT     BUDG.BUDGETID, DEPT.DEPARTMENTID, NOGL, YEAR, SUM(ISNULL(MONTANT, 0)) AS MONTANT
+                                                                            FROM          TBLCOMPONENTS C, TBLBUDGET BUDG, TBLBUDGETDETAILS DETS, TBLDEPARTEMENT DEPT
+                                                                            WHERE      C.DETAILID = DETS.DETAILID AND DETS.BUDGETID = BUDG.BUDGETID AND 
+                                                                                                   BUDG.DEPARTMENTID = DEPT.DEPARTMENTID
+                                                                            GROUP BY BUDG.BUDGETID, DEPT.DEPARTMENTID, YEAR, DETS.NOGL) BUDG
+                                               WHERE      BUDG.BUDGETID = TRAV.BUDGETID AND GL.GL *= BUDG.NOGL AND GL.CATID = CAT.CATID AND CAT.CATID BETWEEN 1 AND 
+                                                                      6 AND BUDG.DEPARTMENTID = TRAV.DEPARTMENTID) A, TBLDEPARTEMENT DEPT
+                       WHERE      A.DEPARTMENTID = DEPT.DEPARTMENTID
+                       GROUP BY CATID, RPTCAT, RPTDESC, DEPT.DEPARTMENTID, RPTID, DEPT.DESCRIPTION, YEAR, GL, A.DESCRIPTION) BUDG LEFT OUTER JOIN
+                          (SELECT     NOGL.NOGL, SUBSTRING(BHBBTX, 12, 11) AS DEPARTMENTID, BHAFCD, BHAGCD, SUM(BHBKVA) AS AMOUNT
+                            FROM          GLBHCPP NOMS, TBLNOMIS NOGL
+                            WHERE      SUBSTRING(BHBBTX, 1, 11) = NOGL.GLNOMIS
+                            GROUP BY NOGL.NOGL, SUBSTRING(BHBBTX, 12, 11), BHAFCD, BHAGCD) NOMIS ON BUDG.DEPARTMENTID = NOMIS.DEPARTMENTID AND 
+                      BUDG.GL = NOMIS.NOGL
+WHERE     (BUDG.DEPARTMENT_NAME = @Department) AND (BUDG.YEAR = @year +
+                          (SELECT     MULTI
+                            FROM          YEARCONVERT
+                            WHERE      MOIS = @Month)) AND (NOMIS.BHAFCD =
+                          (SELECT     MOISFY
+                            FROM          YEARCONVERT
+                            WHERE      MOIS = @Month)) AND (NOMIS.BHAGCD = @year +
+                          (SELECT     MULTI
+                            FROM          YEARCONVERT
+                            WHERE      MOIS = @Month))
+GROUP BY BUDG.DEPARTMENT_NAME, BUDG.CATID, BUDG.RPTCAT, BUDG.RPTID, BUDG.RPTDESC
+ORDER BY BUDG.CATID, BUDG.RPTID</CommandText>
+      </Query>
+    </DataSet>
+    <DataSet Name="Departments">
+      <Fields>
+        <Field Name="departmentID">
+          <DataField>departmentID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="description">
+          <DataField>description</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>LCLAdmin</DataSourceName>
+        <CommandText>select departmentID, description from tbldepartement</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+    </DataSet>
+    <DataSet Name="Months">
+      <Fields>
+        <Field Name="MonthName">
+          <DataField>MonthName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MonthValue">
+          <DataField>MonthValue</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>LCLAdmin</DataSourceName>
+        <CommandText>Select * from tblmonths</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+    </DataSet>
+  </DataSets>
+  <EmbeddedImages>
+    <EmbeddedImage Name="laurentide_logo">
+      <MIMEType>image/gif</MIMEType>
+      <ImageData>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</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <rd:ReportID>f9265fae-c780-4ea6-948c-a30aeccb0a25</rd:ReportID>
+  <PageFooter>
+    <ReportItems>
+      <Textbox Name="textbox11">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <FontSize>8pt</FontSize>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>1</ZIndex>
+        <Width>2.75in</Width>
+        <CanGrow>true</CanGrow>
+        <Value>=Globals!ReportName &amp; ": " &amp; Globals!ExecutionTime</Value>
+      </Textbox>
+      <Textbox Name="textbox10">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <FontSize>8pt</FontSize>
+          <TextAlign>Right</TextAlign>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <rd:DefaultName>textbox10</rd:DefaultName>
+        <CanGrow>true</CanGrow>
+        <Value>="Page " &amp; Globals!PageNumber &amp; " of " &amp; Globals!TotalPages</Value>
+        <Left>6.625in</Left>
+      </Textbox>
+    </ReportItems>
+    <PrintOnLastPage>true</PrintOnLastPage>
+    <PrintOnFirstPage>true</PrintOnFirstPage>
+    <Style />
+    <Height>0.25in</Height>
+  </PageFooter>
+  <BottomMargin>0.1in</BottomMargin>
+  <ReportParameters>
+    <ReportParameter Name="Year">
+      <DataType>String</DataType>
+      <Prompt>Year</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Month">
+      <DataType>String</DataType>
+      <Prompt>Month</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>Months</DataSetName>
+          <ValueField>MonthValue</ValueField>
+          <LabelField>MonthName</LabelField>
+        </DataSetReference>
+      </ValidValues>
+    </ReportParameter>
+    <ReportParameter Name="Department">
+      <DataType>String</DataType>
+      <Prompt>Department</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>Departments</DataSetName>
+          <ValueField>description</ValueField>
+          <LabelField>description</LabelField>
+        </DataSetReference>
+      </ValidValues>
+    </ReportParameter>
+  </ReportParameters>
+  <Language>en-US</Language>
+</Report>

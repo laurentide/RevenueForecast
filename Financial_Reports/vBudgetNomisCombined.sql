@@ -1,0 +1,28 @@
+drop view vBudgetNomisCombined
+
+CREATE VIEW vBudgetNomisCombined
+AS
+SELECT   BUDG.YEAR,
+         NOMS.MONTH,
+	 BUDG.DEPARTMENTID,
+         DEPARTMENT_NAME,
+         BUDG.GL,
+         CATID,
+         RPTCAT,
+         BUDG.RPTDESC,
+         BUDG.DESCRIPTION,
+         TOTALPLANANNEE,
+         TOTALPLANAMOIS,
+         NOMS.MONTH_AMOUNT,
+         NOMS.YTD
+FROM     VBUDGET BUDG,
+         VNOMIS NOMS
+WHERE    BUDG.YEAR = NOMS.YEAR
+         AND BUDG.GL = NOMS.GL
+         AND NOMS.DEPARTMENTID = BUDG.DEPARTMENTID
+select * from vnomis a, vbudget b
+where BUDG.YEAR = NOMS.YEAR
+  AND BUDG.GL = NOMS.GL
+  AND NOMS.DEPARTMENTID = BUDG.DEPARTMENTID
+
+

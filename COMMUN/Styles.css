@@ -1,0 +1,179 @@
+@charset "iso-8859-1";
+
+BODY {border:0px; padding:0px; margin:0px; font-family:Arial; color:#010066;}
+
+.gras   			{ font-weight		: bold;}
+.italic				{ font-style		: italic;}
+.souligne	 		{ text-decoration	: underline;}
+
+.centre 			{ text-align		: center;}
+.droit 				{ text-align		: right;}
+.gauche				{ text-align		: left;}
+.justifie			{ text-align		: justify;}
+.centreBas			{ vertical-align	: bottom;}
+.centreHaut			{ vertical-align	: middle;}
+.centreTop			{ vertical-align	: top;}
+.invisible         	{	visibility		: hidden;}
+
+.indentation		{ text-indent		: 1cm;}
+.marge				{ margin-left		: 50px;}
+.searchMarge		{ margin-left		: 10px;}
+.texte				{ font-size			: 13pt;}
+
+.bordureHaut		{ border-top		: 1px solid  #092873;}
+.bordureBas			{ border-bottom		: 1px solid  #092873;}
+
+.pasBordure			{ border			:0px;		margin:0px;		border-style:none;}
+.texteBleu			{ font-family		:Arial;		color:#010066;}
+
+.liste				{ margin-left:10; }
+
+.spaces {
+	padding-right: 25px;
+	}
+
+.smallspaces {
+	padding-right: 10px;
+	}
+
+.enDessous			{ z-index			: -1;}
+.auDessus			{ z-index			: 2;}
+.noir               { color				: Black;}
+.rouge				{ color				: red;}
+.bleu				{ color				: #f0f2f7;}
+.blanc				{ color				: white;}
+.jaune				{ color				: #FFCC00;}
+.rouge				{ color				: red;}
+.TitreFormulaire	{ font-family:Arial; color:#4169E1; font-weight:bold; font-size:10pt;}
+.backgroundNoir		{ background-color	: black;}
+.background-gris	{ background-color	: #CCCCCC;}
+.backgroundBleu		{ background-color	: #010066;} /* 092873 */
+.background-Jaune   { background-color	: #FFCC00;}
+.backgroundBeige    { background-color	: #D2C4B3;}
+.backgroundOrange    { background-color	: orange;}
+.backgroundOrangePale{ background-color	: #FFCC66;}
+.backgroundVert	    { background-color	: Lime;}
+.backgroundJaune    { background-color	: Yellow;}
+.backgroundBlanc	{ background-color	: white;}
+.error				{ background-color	: red;}
+
+.taille7			{ font-size			: 7pt;}
+.taille8			{ font-size			: 8pt;}
+.taille9			{ font-size			: 9pt;}
+.taille10			{ font-size			: 10pt;}
+.taille12			{ font-size			: 12pt;}
+.taille13			{ font-size			: 13pt;}
+.taille14			{ font-size			: 14pt;}
+.taille16			{ font-size			: 16pt;}
+.taille20			{ font-size			: 20pt;}
+
+/*#F0F8FF*/  /* #4169E1*/
+.AucuneBordure		{ border			:0px; padding:0px; margin:0px;	border-collapse:collapse;}
+.table				{ width				: 90%; text-align: center;}
+.table_title		{ background		: #FFCC00;font-weight: bold;height:50px;}
+.formulaireTitre	{ background		: #000066;font-weight: bold;height:40px;color:White;}
+.formulaireTitreL   { background		: #000066;font-weight: bold;height:60px;color:White;}
+.RechercheTitre 	{ background		: #000066;font-weight: bold;color:White;}
+.formulaireBas		{ background		: #000066;height:15px;color:White;}
+.formulaireLigne1	{ background		: #FFCC00;font-weight: bold;height:10px;color:White;}
+.formulaireLigne2	{ background-color  : #F0F8FF;	font-weight: bold;height:45px;color:Black;}
+.image				{ border			: 2px; border-style:outset;  }
+.fondBleuPale		{ background-color  : #f0f2f7;}
+
+.boutonMenuCFF	    { width				: 20px; height:20px;}
+.erreur				{ color				: red;font-size:10pt;}
+.textbox			{ background-color	: white;border:2px; padding:1px;border-style:window-inset;}
+.textboxJaune		{ background-color	: yellow;border:2px; padding:1px;border-style:window-inset;}
+.bouton				{ border:2px; padding:1px;border-style:outset;}
+.tiret				{ border:1px; border-color:Black;border-style:dotted;}
+
+
+/* Adds for report */
+.imageRapport		{ width:170px; height:50px;}
+.largeur100			{ width:95%;}
+.contourRapport     { border:solid 3 black; }
+.bordureRapport     { border:solid 3 black;
+					  border-top-width:0; 
+					  border-collapse:collapse;}
+.celluleRapport		{ border:solid 1 black; }
+/* 
+| --------------------------------------------------------------------------- | 
+|    Left Menu	(highlight current page)				                      |
+| --------------------------------------------------------------------------- | 
+*/
+#GI #nav-GI,
+#SA #nav-SA, 
+#SB #nav-SB,
+#SC #nav-SC,
+#SD #nav-SD { 
+/* declarations to style the current state */
+	font-weight: bold;
+	color:#FFCC00;
+} 
+
+/* 
+| --------------------------------------------------------------------------- | 
+|    Admin Menu	(Tabs)		(changes styles!!!)			                      |
+| --------------------------------------------------------------------------- | 
+*/
+
+.AD_Menu {
+	background-color:#000066;
+}
+
+#navOnglets {
+position:static;
+vertical-align:bottom;
+width: 100%;
+margin: 0;
+padding:0;
+border-bottom: 10px solid #FFCC00;
+white-space: nowrap;
+}
+
+#navOnglets li {
+float: left;
+margin: 0 2px 0 0;
+border-width: 0px 1px 1px 1px;
+border-style:solid;
+border-color:  #f63 #555 #FFCC00 #999;
+list-style-type: none;
+}
+
+#navOnglets li a {
+position: relative;
+display: block;
+margin: 0;
+padding: 0 0 .2em;
+border-width: 1px 1px 0 1px;
+border-style: solid;
+border-color: #ccc;
+background-color: #fffcf6;
+color: #666;
+font: normal 10px Verdana, Arial, Helvetica, sans-serif;
+text-align: center;
+text-decoration: none;
+padding-left:20;
+padding-right:20;
+}
+
+#navOnglets li a:hover {
+color: #000066;
+text-decoration: underline;
+}
+
+/* Current page */
+#AD_GI #nav-A_GI a,
+#AD_SA #nav-A_SA a, 
+#AD_SB #nav-A_SB a,
+#AD_SC #nav-A_SC a,
+#AD_SD #nav-A_SD a,
+#AD_CO #nav-A_CO a { 
+/* declarations to style the current state */
+	font-weight: bold;
+	background-color: #FFCC00;
+	color: #000066;
+	border-color: #f96 Silver #f63 #f96; 
+}
+
+

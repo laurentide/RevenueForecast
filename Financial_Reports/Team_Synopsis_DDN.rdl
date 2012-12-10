@@ -1,0 +1,1228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2003/10/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <PageHeader>
+    <ReportItems>
+      <Rectangle Name="rectangle1">
+        <ZIndex>1</ZIndex>
+        <Style>
+          <BackgroundImage>
+            <BackgroundRepeat>NoRepeat</BackgroundRepeat>
+            <Source>Embedded</Source>
+            <Value>lcl</Value>
+          </BackgroundImage>
+        </Style>
+        <Left>6.75in</Left>
+      </Rectangle>
+      <Textbox Name="textbox56">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <VerticalAlign>Middle</VerticalAlign>
+          <TextAlign>Left</TextAlign>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+          <FontWeight>700</FontWeight>
+        </Style>
+        <Width>6.5in</Width>
+        <CanGrow>true</CanGrow>
+        <Value>= "Laurentide Controls Team Synopsis"</Value>
+      </Textbox>
+    </ReportItems>
+    <PrintOnLastPage>true</PrintOnLastPage>
+    <PrintOnFirstPage>true</PrintOnFirstPage>
+    <Style />
+    <Height>0.375in</Height>
+  </PageHeader>
+  <RightMargin>0.1in</RightMargin>
+  <Author>LCL</Author>
+  <Body>
+    <ReportItems>
+      <Table Name="table1">
+        <Height>1in</Height>
+        <Style>
+          <BorderWidth>
+            <Default>2pt</Default>
+          </BorderWidth>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+        </Style>
+        <Header>
+          <TableRows>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox6">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <FontSize>8pt</FontSize>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>29</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>Team synopsis</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ColSpan>2</ColSpan>
+                  <ReportItems>
+                    <Textbox Name="textbox55">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <FontSize>8pt</FontSize>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>28</ZIndex>
+                      <rd:DefaultName>textbox55</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Contribution</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ColSpan>2</ColSpan>
+                  <ReportItems>
+                    <Textbox Name="textbox49">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <FontSize>8pt</FontSize>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>27</ZIndex>
+                      <rd:DefaultName>textbox49</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Plan</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox17">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <FontSize>8pt</FontSize>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>26</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>Delta YTD</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox36">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <FontSize>8pt</FontSize>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>25</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox37">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <FontSize>8pt</FontSize>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>24</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>Delta MTD</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox52">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <FontSize>8pt</FontSize>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>23</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox53">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <FontSize>8pt</FontSize>
+                        <TextAlign>Right</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>22</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>YTD</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox57">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <FontSize>8pt</FontSize>
+                        <TextAlign>Right</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>21</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>MTD</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox64">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <FontSize>8pt</FontSize>
+                        <TextAlign>Right</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>20</ZIndex>
+                      <rd:DefaultName>textbox64</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>YTD</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox65">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <FontSize>8pt</FontSize>
+                        <TextAlign>Right</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>19</ZIndex>
+                      <rd:DefaultName>textbox65</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>MTD</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox66">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <FontSize>8pt</FontSize>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>18</ZIndex>
+                      <rd:DefaultName>textbox66</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>$</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox67">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <FontSize>8pt</FontSize>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>17</ZIndex>
+                      <rd:DefaultName>textbox67</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>%</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox68">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <FontSize>8pt</FontSize>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>16</ZIndex>
+                      <rd:DefaultName>textbox68</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>$</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+          </TableRows>
+        </Header>
+        <KeepTogether>true</KeepTogether>
+        <Details>
+          <TableRows>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="tbDepartment">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <FontSize>8pt</FontSize>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>7</ZIndex>
+                      <Action>
+                        <Drillthrough>
+                          <Parameters>
+                            <Parameter Name="departement">
+                              <Value>=Fields!department_name.Value</Value>
+                            </Parameter>
+                            <Parameter Name="year">
+                              <Value>= Parameters!Month.Value</Value>
+                            </Parameter>
+                            <Parameter Name="Month">
+                              <Value>= Parameters!year.Value</Value>
+                            </Parameter>
+                          </Parameters>
+                          <ReportName>Department_DDN</ReportName>
+                        </Drillthrough>
+                      </Action>
+                      <CanGrow>true</CanGrow>
+                      <Value>= Fields!department_name.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="txtContribYTD">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <Format>c</Format>
+                        <FontSize>8pt</FontSize>
+                        <TextAlign>Right</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>6</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>= Fields!ytd.Value * -1</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="txtContribMTD">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <Format>c</Format>
+                        <FontSize>8pt</FontSize>
+                        <TextAlign>Right</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>5</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>= Fields!month_amount.Value * -1</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="txtPlanYTD">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <Format>c</Format>
+                        <FontSize>8pt</FontSize>
+                        <TextAlign>Right</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>4</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>= Sum(Fields!totalplanannee.Value, "SumOfSales")- Sum(Fields!totalplanannee.Value, "SumOfSalesExpenses")- Sum(Fields!totalplanannee.Value, "SumOfExpenses")</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="txtPlanMTD">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <Format>c</Format>
+                        <FontSize>8pt</FontSize>
+                        <TextAlign>Right</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>3</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>= Sum(Fields!totalplanamois.Value, "SumOfSales")- Sum(Fields!totalplanamois.Value, "SumOfSalesExpenses")- Sum(Fields!totalplanamois.Value, "SumOfExpenses")</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox11">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <Format>c</Format>
+                        <FontSize>8pt</FontSize>
+                        <TextAlign>Right</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>2</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>=reportitems!txtContribYTD.value-reportitems!txtPlanYTD.value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox1">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <FontSize>8pt</FontSize>
+                        <TextAlign>Right</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>1</ZIndex>
+                      <rd:DefaultName>textbox1</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Code.DivideXbyY(reportitems!textbox11.value,reportitems!txtPlanYTD.value)</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox4">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <Format>c</Format>
+                        <FontSize>8pt</FontSize>
+                        <TextAlign>Right</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <rd:DefaultName>textbox4</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>=reportitems!txtContribMTD.value-reportitems!txtPlanMTD.value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+          </TableRows>
+          <Grouping Name="table1_Details_Group">
+            <GroupExpressions>
+              <GroupExpression>=Fields!department_name.Value</GroupExpression>
+            </GroupExpressions>
+          </Grouping>
+        </Details>
+        <DataSetName>Depts</DataSetName>
+        <Top>0.25in</Top>
+        <Footer>
+          <TableRows>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox112">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderWidth>
+                          <Bottom>2.25pt</Bottom>
+                          <Top>2.25pt</Top>
+                          <Left>2.25pt</Left>
+                        </BorderWidth>
+                        <BorderColor>
+                          <Bottom>Black</Bottom>
+                          <Top>Black</Top>
+                          <Left>Black</Left>
+                        </BorderColor>
+                        <BorderStyle>
+                          <Bottom>Solid</Bottom>
+                          <Top>Solid</Top>
+                          <Left>Solid</Left>
+                        </BorderStyle>
+                        <FontSize>8pt</FontSize>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>15</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>="Total " &amp; Parameters!year.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="AnneeFY_1">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <Format>c</Format>
+                        <BorderWidth>
+                          <Bottom>2.25pt</Bottom>
+                          <Top>2.25pt</Top>
+                        </BorderWidth>
+                        <BorderColor>
+                          <Bottom>Black</Bottom>
+                          <Top>Black</Top>
+                        </BorderColor>
+                        <BorderStyle>
+                          <Bottom>Solid</Bottom>
+                          <Top>Solid</Top>
+                        </BorderStyle>
+                        <FontSize>8pt</FontSize>
+                        <TextAlign>Right</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>14</ZIndex>
+                      <rd:DefaultName>AnneeFY_1</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>= Sum(Fields!ytd.Value) * -1</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox8">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <Format>c</Format>
+                        <BorderWidth>
+                          <Bottom>2.25pt</Bottom>
+                          <Top>2.25pt</Top>
+                        </BorderWidth>
+                        <BorderColor>
+                          <Bottom>Black</Bottom>
+                          <Top>Black</Top>
+                        </BorderColor>
+                        <BorderStyle>
+                          <Bottom>Solid</Bottom>
+                          <Top>Solid</Top>
+                        </BorderStyle>
+                        <FontSize>8pt</FontSize>
+                        <TextAlign>Right</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>13</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>= Sum(Fields!month_amount.Value) * -1</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox9">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <Format>c</Format>
+                        <BorderWidth>
+                          <Bottom>2.25pt</Bottom>
+                          <Top>2.25pt</Top>
+                        </BorderWidth>
+                        <BorderColor>
+                          <Bottom>Black</Bottom>
+                          <Top>Black</Top>
+                        </BorderColor>
+                        <BorderStyle>
+                          <Bottom>Solid</Bottom>
+                          <Top>Solid</Top>
+                        </BorderStyle>
+                        <FontSize>8pt</FontSize>
+                        <TextAlign>Right</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>12</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>= Sum(Fields!totalplanannee.Value, "SumOfSales")- Sum(Fields!totalplanannee.Value, "SumOfSalesExpenses")- Sum(Fields!totalplanannee.Value, "SumOfExpenses")</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox10">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <Format>c</Format>
+                        <BorderWidth>
+                          <Bottom>2.25pt</Bottom>
+                          <Top>2.25pt</Top>
+                        </BorderWidth>
+                        <BorderColor>
+                          <Bottom>Black</Bottom>
+                          <Top>Black</Top>
+                        </BorderColor>
+                        <BorderStyle>
+                          <Bottom>Solid</Bottom>
+                          <Top>Solid</Top>
+                        </BorderStyle>
+                        <FontSize>8pt</FontSize>
+                        <TextAlign>Right</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>11</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>= Sum(Fields!totalplanamois.Value, "SumOfSales")- Sum(Fields!totalplanamois.Value, "SumOfSalesExpenses")- Sum(Fields!totalplanamois.Value, "SumOfExpenses")</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox5">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <Format>c</Format>
+                        <BorderWidth>
+                          <Bottom>2.25pt</Bottom>
+                          <Top>2.25pt</Top>
+                        </BorderWidth>
+                        <BorderColor>
+                          <Bottom>Black</Bottom>
+                          <Top>Black</Top>
+                        </BorderColor>
+                        <BorderStyle>
+                          <Bottom>Solid</Bottom>
+                          <Top>Solid</Top>
+                        </BorderStyle>
+                        <FontSize>8pt</FontSize>
+                        <TextAlign>Right</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>10</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>=reportitems!AnneeFY_1.value-reportitems!textbox9.value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox12">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderWidth>
+                          <Bottom>2.25pt</Bottom>
+                          <Top>2.25pt</Top>
+                        </BorderWidth>
+                        <BorderColor>
+                          <Bottom>Black</Bottom>
+                          <Top>Black</Top>
+                        </BorderColor>
+                        <BorderStyle>
+                          <Bottom>Solid</Bottom>
+                          <Top>Solid</Top>
+                        </BorderStyle>
+                        <FontSize>8pt</FontSize>
+                        <TextAlign>Right</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>9</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Code.DivideXbyY(reportitems!textbox5.value,reportitems!textbox9.value)</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox13">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <Format>c</Format>
+                        <BorderWidth>
+                          <Bottom>2.25pt</Bottom>
+                          <Top>2.25pt</Top>
+                          <Right>2.25pt</Right>
+                        </BorderWidth>
+                        <BorderColor>
+                          <Bottom>Black</Bottom>
+                          <Top>Black</Top>
+                          <Right>Black</Right>
+                        </BorderColor>
+                        <BorderStyle>
+                          <Bottom>Solid</Bottom>
+                          <Top>Solid</Top>
+                          <Right>Solid</Right>
+                        </BorderStyle>
+                        <FontSize>8pt</FontSize>
+                        <TextAlign>Right</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>8</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>=reportitems!textbox8.value-reportitems!textbox10.value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+          </TableRows>
+        </Footer>
+        <TableColumns>
+          <TableColumn>
+            <Width>1.41796in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>1.03125in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>1.03125in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>1.03125in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>1.03125in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>1.03125in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>0.64453in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>1.03125in</Width>
+          </TableColumn>
+        </TableColumns>
+      </Table>
+    </ReportItems>
+    <Style />
+    <Height>1.5in</Height>
+  </Body>
+  <TopMargin>0.1in</TopMargin>
+  <DataSources>
+    <DataSource Name="LCLAdmin">
+      <rd:DataSourceID>16d3895b-a177-4fe8-9e59-916511484896</rd:DataSourceID>
+      <DataSourceReference>LCLAdmin</DataSourceReference>
+    </DataSource>
+  </DataSources>
+  <Code>public function ShowPourcentage(byval budget as String, byval diff as String) as String
+	dim reponse as String
+	if budget = " " or diff = " "then
+		reponse =" "
+	else
+		reponse = format(ctype((cdbl(diff)/cdbl(budget)),String),"Percent")
+	end if
+
+	return reponse 
+end function
+
+Public Shared Function DivideXbyY(ByVal X As Object, ByVal Y As Object) As Decimal
+on error goto divide_Error
+    DivideXbyY = IIF(Y=0, 0, X / IIF(Y=0, 1, Y))
+exit function
+divide_Error:
+    DivideXbyY = 0	
+End Function</Code>
+  <Width>8.25004in</Width>
+  <DataSets>
+    <DataSet Name="lclAdmin">
+      <Fields>
+        <Field Name="catid">
+          <DataField>catid</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="rptcat">
+          <DataField>rptcat</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="rptdesc">
+          <DataField>rptdesc</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="department_name">
+          <DataField>department_name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="totalplanannee">
+          <DataField>totalplanannee</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="totalplanamois">
+          <DataField>totalplanamois</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="month_amount">
+          <DataField>month_amount</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="ytd">
+          <DataField>ytd</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>LCLAdmin</DataSourceName>
+        <CommandText>SELECT  catid,
+        rptcat,
+        rptdesc,
+        department_name,
+        SUM(totalplanannee) /12 * (SELECT MOISFY FROM YEARCONVERT WHERE   MOIS = @Month) AS totalplanannee ,
+        SUM(totalplanamois) AS totalplanamois,
+        SUM(month_amount) AS month_amount ,
+        SUM(ytd) AS ytd
+FROM    dbo.NomisDept(@Month, @Year) AS NOMS
+        FULL JOIN dbo.budget(@Month, @Year) BUDG
+        ON      BUDG.year         = noms.year
+            AND budg.gl           = noms.gl
+            AND budg.departmentid = noms.departmentid
+WHERE   MONTH                     =
+        (SELECT MOISFY
+        FROM    YEARCONVERT
+        WHERE   MOIS = @Month
+        )
+    AND NOMS.YEAR = @Year +
+        (SELECT MULTI
+        FROM    YEARCONVERT
+        WHERE   MOIS = @Month
+        )
+GROUP BY catid,
+        rptcat,
+        rptdesc,
+        department_name
+ORDER BY catid</CommandText>
+        <QueryParameters>
+          <QueryParameter Name="@Month">
+            <Value>=Parameters!Month.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@Year">
+            <Value>=Parameters!year.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+    </DataSet>
+    <DataSet Name="Months">
+      <Fields>
+        <Field Name="monthname">
+          <DataField>monthname</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MonthValue">
+          <DataField>monthvalue</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>LCLAdmin</DataSourceName>
+        <CommandText>select rtrim(ltrim(monthname)) as monthname,monthvalue from tblmonths</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+    </DataSet>
+    <DataSet Name="Yearconvert">
+      <Fields>
+        <Field Name="Mois">
+          <DataField>Mois</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="MoisFY">
+          <DataField>MoisFY</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Multi">
+          <DataField>Multi</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Quartier">
+          <DataField>Quartier</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>LCLAdmin</DataSourceName>
+        <CommandText>select * from yearconvert where mois = @Month</CommandText>
+        <QueryParameters>
+          <QueryParameter Name="@Month">
+            <Value>=Parameters!Month.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+    </DataSet>
+    <DataSet Name="SumOfSales">
+      <Fields>
+        <Field Name="totalplanannee">
+          <DataField>totalplanannee</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="totalplanamois">
+          <DataField>totalplanamois</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="ytd">
+          <DataField>ytd</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="month_amount">
+          <DataField>month_amount</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>LCLAdmin</DataSourceName>
+        <CommandText>select sum(totalplanannee) as totalplanannee , sum(totalplanamois) as totalplanamois, sum(ytd) as ytd, sum(month_amount) as month_amount   from
+(SELECT catid,
+            rptcat, 
+            rptdesc,
+            department_name, 
+	sum(totalplanannee) /12 * (SELECT MOISFY FROM YEARCONVERT WHERE MOIS = @Month)  as totalplanannee , 
+              sum(totalplanamois) as totalplanamois, 
+              sum(month_amount) as month_amount ,
+              sum(ytd) as ytd
+FROM    dbo.NomisDept(@Month, @Year) AS NOMS
+        FULL JOIN dbo.budget(@Month, @Year) BUDG
+        ON      BUDG.year         = noms.year
+            AND budg.gl           = noms.gl
+            AND budg.departmentid = noms.departmentid
+WHERE   MONTH                     =
+        (SELECT MOISFY
+        FROM    YEARCONVERT
+        WHERE   MOIS = @Month
+        )
+    AND NOMS.YEAR = @Year +
+        (SELECT MULTI
+        FROM    YEARCONVERT
+        WHERE   MOIS = @Month
+        )
+GROUP BY catid,
+        rptcat,
+        rptdesc,
+        department_name) a
+where catid = 1
+group by catid</CommandText>
+        <QueryParameters>
+          <QueryParameter Name="@Month">
+            <Value>=Parameters!Month.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@Year">
+            <Value>=Parameters!year.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+    </DataSet>
+    <DataSet Name="SumOfExpenses">
+      <Fields>
+        <Field Name="totalplanannee">
+          <DataField>totalplanannee</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="totalplanamois">
+          <DataField>totalplanamois</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="ytd">
+          <DataField>ytd</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="month_amount">
+          <DataField>month_amount</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>LCLAdmin</DataSourceName>
+        <CommandText>select sum(totalplanannee) as totalplanannee , sum(totalplanamois) as totalplanamois, sum(ytd) as ytd, sum(month_amount) as month_amount   from
+(SELECT catid,
+            rptcat, 
+            rptdesc,
+            department_name, 
+	sum(totalplanannee) /12 * (SELECT MOISFY FROM YEARCONVERT WHERE MOIS = @Month)  as totalplanannee , 
+              sum(totalplanamois) as totalplanamois, 
+              sum(month_amount) as month_amount ,
+              sum(ytd) as ytd
+FROM    dbo.NomisDept(@Month, @Year) AS NOMS
+        FULL JOIN dbo.budget(@Month, @Year) BUDG
+        ON      BUDG.year         = noms.year
+            AND budg.gl           = noms.gl
+            AND budg.departmentid = noms.departmentid
+WHERE   MONTH                     =
+        (SELECT MOISFY
+        FROM    YEARCONVERT
+        WHERE   MOIS = @Month
+        )
+    AND NOMS.YEAR = @Year +
+        (SELECT MULTI
+        FROM    YEARCONVERT
+        WHERE   MOIS = @Month
+        )
+GROUP BY catid,
+        rptcat,
+        rptdesc,
+        department_name) a
+where catid &gt; 2</CommandText>
+        <QueryParameters>
+          <QueryParameter Name="@Month">
+            <Value>=Parameters!Month.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@Year">
+            <Value>=Parameters!year.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+    </DataSet>
+    <DataSet Name="SumOfSalesExpenses">
+      <Fields>
+        <Field Name="totalplanannee">
+          <DataField>totalplanannee</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="totalplanamois">
+          <DataField>totalplanamois</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="ytd">
+          <DataField>ytd</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="month_amount">
+          <DataField>month_amount</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>LCLAdmin</DataSourceName>
+        <CommandText>select sum(totalplanannee) as totalplanannee , sum(totalplanamois) as totalplanamois, sum(ytd) as ytd, sum(month_amount) as month_amount   from
+(SELECT catid,
+            rptcat, 
+            rptdesc,
+            department_name, 
+	sum(totalplanannee) /12 * (SELECT MOISFY FROM YEARCONVERT WHERE MOIS = @Month)  as totalplanannee , 
+              sum(totalplanamois) as totalplanamois, 
+              sum(month_amount) as month_amount ,
+              sum(ytd) as ytd
+FROM    dbo.NomisDept(@Month, @Year) AS NOMS
+        FULL JOIN dbo.budget(@Month, @Year) BUDG
+        ON      BUDG.year         = noms.year
+            AND budg.gl           = noms.gl
+            AND budg.departmentid = noms.departmentid
+WHERE   MONTH                     =
+        (SELECT MOISFY
+        FROM    YEARCONVERT
+        WHERE   MOIS = @Month
+        )
+    AND NOMS.YEAR = @Year +
+        (SELECT MULTI
+        FROM    YEARCONVERT
+        WHERE   MOIS = @Month
+        )
+GROUP BY catid,
+        rptcat,
+        rptdesc,
+        department_name) a
+where catid = 2
+group by catid</CommandText>
+        <QueryParameters>
+          <QueryParameter Name="@Month">
+            <Value>=Parameters!Month.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@Year">
+            <Value>=Parameters!year.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+    </DataSet>
+    <DataSet Name="Depts">
+      <Fields>
+        <Field Name="department_name">
+          <DataField>department_name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="totalplanannee">
+          <DataField>totalplanannee</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="totalplanamois">
+          <DataField>totalplanamois</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="month_amount">
+          <DataField>month_amount</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="ytd">
+          <DataField>ytd</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>LCLAdmin</DataSourceName>
+        <CommandText>SELECT  department_name,
+        SUM(case when catid = 1 then totalplanannee * -1
+	         else totalplanannee end) /12 * (SELECT MOISFY FROM YEARCONVERT WHERE   MOIS = @Month) AS totalplanannee ,
+        SUM(case when catid = 1 then totalplanamois * -1
+	         else totalplanamois end) AS totalplanamois,
+        SUM(month_amount) AS month_amount ,
+        SUM(ytd) AS ytd
+FROM    dbo.NomisDept(@Month, @Year) AS NOMS
+        FULL JOIN dbo.budget(@Month, @Year) BUDG
+        ON      BUDG.year         = noms.year
+            AND budg.gl           = noms.gl
+            AND budg.departmentid = noms.departmentid
+WHERE   MONTH                     =
+        (SELECT MOISFY
+        FROM    YEARCONVERT
+        WHERE   MOIS = @Month
+        )
+    AND NOMS.YEAR = @Year +
+        (SELECT MULTI
+        FROM    YEARCONVERT
+        WHERE   MOIS = @Month
+        )
+and catid &lt;= 6
+GROUP BY department_name</CommandText>
+        <QueryParameters>
+          <QueryParameter Name="@Month">
+            <Value>=Parameters!Month.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@Year">
+            <Value>=Parameters!year.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+    </DataSet>
+  </DataSets>
+  <EmbeddedImages>
+    <EmbeddedImage Name="lcl">
+      <MIMEType>image/jpeg</MIMEType>
+      <ImageData>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</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <LeftMargin>0.1in</LeftMargin>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <Description>Rapport financier global comparatif à l'année dernière</Description>
+  <rd:ReportID>f31ed984-5b48-4753-9f5e-c71dd288de9e</rd:ReportID>
+  <BottomMargin>0.1in</BottomMargin>
+  <ReportParameters>
+    <ReportParameter Name="year">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>=Year(DateAdd(DateInterval.Month,-1, Now()))</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Year</Prompt>
+      <ValidValues>
+        <ParameterValues>
+          <ParameterValue>
+            <Value>2007</Value>
+          </ParameterValue>
+          <ParameterValue>
+            <Value>2008</Value>
+          </ParameterValue>
+          <ParameterValue>
+            <Value>2009</Value>
+          </ParameterValue>
+          <ParameterValue>
+            <Value>2010</Value>
+          </ParameterValue>
+        </ParameterValues>
+      </ValidValues>
+    </ReportParameter>
+    <ReportParameter Name="Month">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>=Month(DateAdd(DateInterval.Month,-1, Now())) </Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Month</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>Months</DataSetName>
+          <ValueField>MonthValue</ValueField>
+          <LabelField>monthname</LabelField>
+        </DataSetReference>
+      </ValidValues>
+    </ReportParameter>
+  </ReportParameters>
+  <Language>en-US</Language>
+</Report>
